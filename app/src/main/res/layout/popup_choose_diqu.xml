@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="383dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="所在地区"
+            android:textColor="#848689"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/iv_chahao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/icon_cha" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/sheng"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            tools:text="四川省" />
+
+        <TextView
+            android:id="@+id/shi"
+            android:layout_width="79dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            tools:text="成都市" />
+
+        <TextView
+            android:id="@+id/qu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:minWidth="79dp"
+            tools:text="青羊区" />
+    </LinearLayout>
+    <!--下划线-->
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/red"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line_color" />
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/ListViewCommon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</LinearLayout>
